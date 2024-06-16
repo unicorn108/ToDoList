@@ -3,3 +3,169 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+h3 {
+  font-size: 1.43rem;
+}
+
+h3,
+button,
+span {
+  font-weight: 500;
+}
+
+.submit-btn,
+button {
+  cursor: pointer;
+}
+
+input,
+input::placeholder {
+  font-size: 1.14rem;
+  font-weight: 400;
+}
+.main-container {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px 16px 16px 16px;
+  max-width: 500px;
+}
+
+.todo-form {
+  width: 100%;
+  background-color: rgb(247, 242, 250, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.search-todo {
+  border: none;
+  min-height: 48px;
+  border-radius: 28px;
+  background-color: rgb(103, 80, 164, 0.05);
+  padding: 8px 16px;
+}
+
+.main-container > i {
+  position: absolute;
+  top: 102px;
+  right: 30px;
+  font-size: 16px;
+}
+
+#input-description,
+#input-datetime {
+  min-height: 56px;
+  padding: 16px;
+  background: rgb(247, 242, 250, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(121, 116, 126, 1);
+}
+
+.btn-block {
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+}
+
+.submit-btn,
+.clear-btn {
+  min-height: 40px;
+  padding: 10px 24px;
+  border: 1px solid rgb(121, 116, 126, 1);
+  border-radius: 100px;
+}
+
+.submit-btn {
+  background-color: rgb(103, 80, 164, 1);
+  color: rgb(247, 242, 250, 1);
+}
+
+.clear-btn {
+  background-color: rgb(247, 242, 250, 1);
+  color: rgb(103, 80, 164, 1);
+}
+
+.filter-block {
+  display: flex;
+  justify-content: center;
+  min-height: 48px;
+}
+
+.box-filter-all,
+.box-filter-active,
+.box-filter-done {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.box-filter-all {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid rgb(121, 116, 126, 1);
+  background-color: rgb(232, 222, 248, 1);
+  flex: 1;
+}
+
+.box-filter-active {
+  border-top: 1px solid rgb(121, 116, 126, 1);
+  border-bottom: 1px solid rgb(121, 116, 126, 1);
+  flex: 1;
+}
+
+.box-filter-done {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid rgb(121, 116, 126, 1);
+  flex: 1;
+}
+
+.todos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input[type="checkbox"] {
+  accent-color: rgb(208, 188, 255, 1);
+  border: 2px solid rgba(73, 69, 79, 1);
+  transform: scale(1.2);
+}
+
+.todo-item {
+  min-height: 62px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 14px;
+  border-radius: 16px;
+  background-color: rgb(103, 80, 164, 0.05);
+  padding: 8px 16px;
+}
+
+.todo-item > i {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.todo-description {
+  font-size: 1.14rem;
+}
+
+.hidden {
+  display: none !important;
+}
